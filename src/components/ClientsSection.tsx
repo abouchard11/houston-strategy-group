@@ -1,21 +1,38 @@
+import hinesLogo from "@/assets/clients/hines-logo.png";
+import greystarLogo from "@/assets/clients/greystar-logo.png";
+import streamLogo from "@/assets/clients/stream-logo.png";
+import graniteLogo from "@/assets/clients/granite-logo.png";
+import perryLogo from "@/assets/clients/perry-logo.png";
+import patrinelyLogo from "@/assets/clients/patrinely-logo.png";
+import midwayLogo from "@/assets/clients/midway-logo.png";
+import transwesternLogo from "@/assets/clients/transwestern-logo.png";
+import jllLogo from "@/assets/clients/jll-logo.png";
+import cbreLogo from "@/assets/clients/cbre-logo.png";
+import skanskaLogo from "@/assets/clients/skanska-logo.png";
+import structureToneLogo from "@/assets/clients/structure-tone-logo.png";
+import harveyLogo from "@/assets/clients/harvey-logo.png";
+import tellepsenLogo from "@/assets/clients/tellepsen-logo.png";
+import bartlettLogo from "@/assets/clients/bartlett-logo.png";
+import vaughnLogo from "@/assets/clients/vaughn-logo.png";
+
 const ClientsSection = () => {
   const clients = [
-    { name: "Hines", category: "Commercial Development" },
-    { name: "Greystar", category: "Multifamily Development" },
-    { name: "Stream Data Centers", category: "Data Center Development" },
-    { name: "Granite Properties", category: "Commercial Real Estate" },
-    { name: "Perry Homes", category: "Residential Construction" },
-    { name: "Patrinely Group", category: "Mixed-Use Development" },
-    { name: "Midway Companies", category: "Commercial Development" },
-    { name: "Transwestern", category: "Commercial Real Estate" },
-    { name: "JLL", category: "Commercial Development" },
-    { name: "CBRE", category: "Commercial Real Estate" },
-    { name: "Skanska USA", category: "General Contracting" },
-    { name: "Structure Tone", category: "General Contracting" },
-    { name: "Harvey Builders", category: "General Contracting" },
-    { name: "Tellepsen", category: "General Contracting" },
-    { name: "Bartlett Cocke", category: "General Contracting" },
-    { name: "Vaughn Construction", category: "General Contracting" },
+    { name: "Hines", logo: hinesLogo, category: "Commercial Development" },
+    { name: "Greystar", logo: greystarLogo, category: "Multifamily Development" },
+    { name: "Stream Data Centers", logo: streamLogo, category: "Data Center Development" },
+    { name: "Granite Properties", logo: graniteLogo, category: "Commercial Real Estate" },
+    { name: "Perry Homes", logo: perryLogo, category: "Residential Construction" },
+    { name: "Patrinely Group", logo: patrinelyLogo, category: "Mixed-Use Development" },
+    { name: "Midway Companies", logo: midwayLogo, category: "Commercial Development" },
+    { name: "Transwestern", logo: transwesternLogo, category: "Commercial Real Estate" },
+    { name: "JLL", logo: jllLogo, category: "Commercial Development" },
+    { name: "CBRE", logo: cbreLogo, category: "Commercial Real Estate" },
+    { name: "Skanska USA", logo: skanskaLogo, category: "General Contracting" },
+    { name: "Structure Tone", logo: structureToneLogo, category: "General Contracting" },
+    { name: "Harvey Builders", logo: harveyLogo, category: "General Contracting" },
+    { name: "Tellepsen", logo: tellepsenLogo, category: "General Contracting" },
+    { name: "Bartlett Cocke", logo: bartlettLogo, category: "General Contracting" },
+    { name: "Vaughn Construction", logo: vaughnLogo, category: "General Contracting" },
   ];
 
   return (
@@ -35,21 +52,18 @@ const ClientsSection = () => {
           </p>
         </div>
 
-        {/* Clients Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+        {/* Clients Logo Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 max-w-6xl mx-auto">
           {clients.map((client, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center justify-center p-6 bg-card border-2 border-border rounded-xl hover:border-accent transition-all hover:shadow-lg"
+              className="group relative flex items-center justify-center p-8 bg-card border border-border rounded-xl hover:border-accent transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <div className="text-center">
-                <div className="text-2xl font-black text-foreground mb-2 group-hover:text-accent transition-colors">
-                  {client.name}
-                </div>
-                <div className="text-xs text-muted-foreground uppercase tracking-wider">
-                  {client.category}
-                </div>
-              </div>
+              <img
+                src={client.logo}
+                alt={`${client.name} logo`}
+                className="w-full h-auto max-h-16 object-contain grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+              />
             </div>
           ))}
         </div>
