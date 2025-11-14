@@ -12,7 +12,7 @@ const FAQSection = () => {
       answer: "Texas SB 6, effective January 1, 2026, requires data centers consuming over 75 MW to complete an ERCOT impact study with fees exceeding $100,000, plus new behind-the-meter and backup power mandates. We specialize in navigating these requirements, minimizing costs, and accelerating approvals through our ERCOT/PUC relationships."
     },
     {
-      question: "Why choose Houston Strategy over other permit expeditors?",
+      question: "Why choose Houston Strategy Group over other permit expeditors?",
       answer: "We bring 20+ years of Houston government experience with deep relationships at City Hall, ERCOT, PUC, and major utilities. We're not just permit runners—we're former government officials who know how to fast-track complex projects like data centers and large commercial developments. Our $300M+ track record speaks for itself."
     },
     {

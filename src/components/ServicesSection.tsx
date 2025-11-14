@@ -1,37 +1,52 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Home, Wrench, FileCheck, Clock, Users } from "lucide-react";
+import { Building2, Home, Wrench, FileCheck, Clock, Users, HardHat, Hammer, Building } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
       icon: Building2,
-      title: "Commercial Permitting",
-      description: "Office buildings, retail spaces, restaurants, hotels. Fast-track approval for complex commercial developments with ADA compliance and code expertise."
+      title: "Commercial Construction",
+      description: "Full-service permitting for office buildings, retail centers, warehouses, hotels, and restaurants. From ground-up construction to major renovations, we handle site plans, MEP systems, structural engineering approvals, and ADA compliance with proven speed."
+    },
+    {
+      icon: HardHat,
+      title: "General Contracting Support",
+      description: "Partner with general contractors on large-scale commercial builds. We coordinate all trades permits, manage inspection schedules, handle change orders, and keep your construction timeline on track with proactive city coordination."
+    },
+    {
+      icon: Building,
+      title: "Tenant Improvement & Build-Outs",
+      description: "Expedite permits for commercial tenant improvements, retail fit-outs, restaurant conversions, and office space reconfigurations. Navigate complex change-of-use, fire code upgrades, and landlord coordination requirements."
     },
     {
       icon: Home,
       title: "Residential Projects",
-      description: "Single-family, multi-family, fix-and-flip projects. Streamline residential permits with our deep Houston code knowledge and city relationships."
+      description: "Single-family custom homes, multi-family developments, townhomes, and fix-and-flip projects. Streamline residential permits with our deep Houston code knowledge and city relationships for faster starts."
+    },
+    {
+      icon: Hammer,
+      title: "Structural & MEP Systems",
+      description: "Complex structural modifications, HVAC systems, electrical service upgrades, plumbing systems, fire sprinklers, and life safety systems. We coordinate engineering reviews and ensure compliance with all current codes."
     },
     {
       icon: Wrench,
       title: "Renovations & Additions",
-      description: "Tenant improvements, building additions, structural modifications. Navigate complex change-of-use and historic district requirements."
+      description: "Building additions, structural modifications, historic renovations, and facade improvements. Expert handling of existing building assessments, variance applications, and historic district requirements."
     },
     {
       icon: FileCheck,
       title: "Expedited Review",
-      description: "Leverage our 20+ years of Houston government relationships for priority review and fast-track approval on time-sensitive projects."
+      description: "Leverage our 20+ years of Houston government relationships for priority review and fast-track approval on time-sensitive projects. We know exactly who to call to move your permits forward."
     },
     {
       icon: Clock,
-      title: "Code Compliance",
-      description: "Expert navigation of building codes, zoning regulations, fire safety, and accessibility requirements. Fix violations and ensure compliance."
+      title: "Code Compliance & Violations",
+      description: "Expert navigation of building codes, zoning regulations, fire safety, and accessibility requirements. Resolve existing violations, secure certificates of occupancy, and ensure full compliance before sale or lease."
     },
     {
       icon: Users,
-      title: "Multi-Site Coordination",
-      description: "Manage permit coordination across multiple project sites. Scale your development portfolio with our proven multi-deal velocity."
+      title: "Multi-Site Portfolio Management",
+      description: "Manage permit coordination across multiple construction sites and jurisdictions. Scale your development portfolio with our proven multi-deal velocity and centralized project tracking."
     }
   ];
 
@@ -43,12 +58,14 @@ const ServicesSection = () => {
             Our Services
           </div>
           <h2 className="text-4xl sm:text-5xl font-black text-foreground mb-6">
-            Commercial & Residential
-            <span className="text-accent"> Permit Experts</span>
+            Commercial Construction &
+            <span className="text-accent"> General Contracting Permits</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Beyond data centers, we deliver fast-track permitting for all commercial and residential projects 
-            across Houston and Texas with $300M+ in permitted value.
+            Beyond data centers, we're Houston's premier commercial construction permitting partner. From ground-up 
+            builds to complex renovations, we've permitted $300M+ in commercial construction projects with unmatched 
+            speed and expertise. We work alongside general contractors, developers, and property owners to navigate 
+            every phase of construction permitting.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ const TestimonialsSection = () => {
       company: "Texas Tech Infrastructure",
       image: "/placeholder.svg",
       rating: 5,
-      text: "Houston Strategy navigated our 150 MW data center through the SB 6 process flawlessly. Their ERCOT relationships saved us over $2M in study fees and cut our timeline by 8 months. They're the only firm I trust with Texas data center permitting.",
+      text: "Houston Strategy Group navigated our 150 MW data center through the SB 6 process flawlessly. Their ERCOT relationships saved us over $2M in study fees and cut our timeline by 8 months. They're the only firm I trust with Texas data center permitting.",
     },
     {
       name: "Sarah Chen",
@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
       company: "Apex Commercial Properties",
       image: "/placeholder.svg",
       rating: 5,
-      text: "We've permitted over $300M in commercial projects with Houston Strategy. Their 20+ years of Houston government experience shows in every interaction. They know exactly who to call and how to fast-track even the most complex projects.",
+      text: "We've permitted over $300M in commercial construction projects with Houston Strategy Group. Their 20+ years of Houston government experience shows in every interaction. They know exactly who to call and how to fast-track even the most complex builds.",
     },
     {
       name: "James Peterson",
@@ -33,7 +33,7 @@ const TestimonialsSection = () => {
       company: "Metro Housing Solutions",
       image: "/placeholder.svg",
       rating: 5,
-      text: "From fix-and-flip to large multifamily, Houston Strategy delivers. Their code compliance knowledge and city relationships mean our projects move faster than competitors. They're an invaluable partner for any Houston development.",
+      text: "From fix-and-flip to large multifamily, Houston Strategy Group delivers. Their code compliance knowledge and city relationships mean our projects move faster than competitors. They're an invaluable partner for any Houston development.",
     },
     {
       name: "David Kumar",
@@ -41,7 +41,7 @@ const TestimonialsSection = () => {
       company: "HyperScale Data Centers",
       image: "/placeholder.svg",
       rating: 5,
-      text: "SB 6 compliance could have killed our project timeline. Houston Strategy's deep understanding of ERCOT/PUC requirements and their ability to negotiate utility agreements saved our Q1 deadline. Worth every penny.",
+      text: "SB 6 compliance could have killed our project timeline. Houston Strategy Group's deep understanding of ERCOT/PUC requirements and their ability to negotiate utility agreements saved our Q1 deadline. Worth every penny.",
     },
     {
       name: "Robert Martinez",
@@ -49,7 +49,7 @@ const TestimonialsSection = () => {
       company: "Lone Star Construction Group",
       image: "/placeholder.svg",
       rating: 5,
-      text: "After struggling with permits for months, Houston Strategy came in and had everything approved in 6 weeks. Their insider knowledge of Houston's permitting process is phenomenal. Now they're our go-to for all projects.",
+      text: "After struggling with permits for months, Houston Strategy Group came in and had everything approved in 6 weeks. Their insider knowledge of Houston's permitting process is phenomenal. Now they're our go-to for all construction projects.",
     },
   ];
 

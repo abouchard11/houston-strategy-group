@@ -14,10 +14,10 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Houston Strategy | SB 6 Data Center & Commercial Permit Expediting</title>
+        <title>Houston Strategy Group | SB 6 Data Center & Commercial Construction Permits</title>
         <meta 
           name="description" 
-          content="Texas SB 6 data center permitting specialists. 20+ years Houston government experience. $300M+ permitted. ERCOT/PUC navigation, commercial permits, fast-track approvals." 
+          content="Texas SB 6 data center permitting specialists. 20+ years Houston government experience. $300M+ in commercial construction permitted. ERCOT/PUC navigation, general contracting support, fast-track approvals." 
         />
         <meta 
           name="keywords" 

@@ -92,7 +92,7 @@ const Footer = () => {
 
         {/* Bottom Bar */}
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
-          <p>© 2025 Houston Strategy. All rights reserved. SB 6 Permitting Specialists.</p>
+          <p>© 2025 Houston Strategy Group. All rights reserved. SB 6 Permitting Specialists.</p>
         </div>
       </div>
     </footer>
