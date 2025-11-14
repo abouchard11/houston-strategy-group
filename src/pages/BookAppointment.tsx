@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -30,6 +31,17 @@ const BookAppointment = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Book Consultation | Houston Strategy - Free Permit Consultation</title>
+        <meta 
+          name="description" 
+          content="Schedule a free consultation with Houston Strategy. Get expert guidance on SB 6 data center permitting, commercial permits, and ERCOT/PUC navigation. 20+ years experience." 
+        />
+        <meta 
+          name="keywords" 
+          content="book permit consultation, schedule permit meeting, data center consultation Houston, SB 6 expert consultation" 
+        />
+      </Helmet>
       <Navbar />
       
       {/* Header */}
