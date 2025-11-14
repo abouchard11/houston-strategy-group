@@ -8,10 +8,10 @@ const Testimonials = () => {
   return (
     <div>
       <Helmet>
-        <title>Client Testimonials | Houston Strategy - Texas Permit Expediting</title>
+        <title>Client Testimonials | Houston Strategy Group - Texas Permit Expediting</title>
         <meta 
           name="description" 
-          content="Read testimonials from data center developers, commercial builders, and contractors who trust Houston Strategy for SB 6 compliance and permit expediting across Texas." 
+          content="Read testimonials from data center developers, commercial builders, and contractors who trust Houston Strategy Group for SB 6 compliance and permit expediting across Texas."
         />
         <meta 
           name="keywords" 
@@ -25,7 +25,7 @@ const Testimonials = () => {
             Client Success Stories
           </h1>
           <p className="text-xl text-center text-primary-foreground/90 max-w-3xl mx-auto">
-            See why leading developers, contractors, and data center operators choose Houston Strategy for their most critical permitting needs.
+            See why leading developers, contractors, and data center operators choose Houston Strategy Group for their most critical permitting needs.
           </p>
         </div>
       </div>

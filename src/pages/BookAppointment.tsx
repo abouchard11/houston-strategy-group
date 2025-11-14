@@ -32,10 +32,10 @@ const BookAppointment = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Book Consultation | Houston Strategy - Free Permit Consultation</title>
+        <title>Book Consultation | Houston Strategy Group - Free Permit Consultation</title>
         <meta 
           name="description" 
-          content="Schedule a free consultation with Houston Strategy. Get expert guidance on SB 6 data center permitting, commercial permits, and ERCOT/PUC navigation. 20+ years experience." 
+          content="Schedule a free consultation with Houston Strategy Group. Get expert guidance on SB 6 data center permitting, commercial construction permits, and ERCOT/PUC navigation. 20+ years experience." 
         />
         <meta 
           name="keywords" 
