@@ -21,6 +21,7 @@ const Navbar = () => {
     { label: "Process", href: "#process" },
     { label: "Projects", href: "#projects" },
     { label: "Team", href: "#team" },
+    { label: "Testimonials", href: "/testimonials", isRoute: true },
     { label: "FAQ", href: "#faq" },
   ];
 
@@ -43,15 +44,25 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="text-foreground hover:text-accent transition-colors font-medium"
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="text-foreground hover:text-accent transition-colors font-medium"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-foreground hover:text-accent transition-colors font-medium"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <Button
               asChild
               className="bg-accent hover:bg-accent-light text-accent-foreground font-semibold"
@@ -78,16 +89,27 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-background border-t border-border">
           <div className="container mx-auto px-4 py-4 space-y-4">
-            {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block text-foreground hover:text-accent transition-colors font-medium py-2"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                {link.label}
-              </a>
-            ))}
+            {navLinks.map((link) =>
+              link.isRoute ? (
+                <Link
+                  key={link.href}
+                  to={link.href}
+                  className="block text-foreground hover:text-accent transition-colors font-medium py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="block text-foreground hover:text-accent transition-colors font-medium py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <Button
               asChild
               className="w-full bg-accent hover:bg-accent-light text-accent-foreground font-semibold"

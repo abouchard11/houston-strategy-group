@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import DataCenterSection from "@/components/DataCenterSection";
@@ -12,6 +13,17 @@ import Footer from "@/components/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Houston Strategy | SB 6 Data Center & Commercial Permit Expediting</title>
+        <meta 
+          name="description" 
+          content="Texas SB 6 data center permitting specialists. 20+ years Houston government experience. $300M+ permitted. ERCOT/PUC navigation, commercial permits, fast-track approvals." 
+        />
+        <meta 
+          name="keywords" 
+          content="Texas SB 6 permitting, data center permits Houston, ERCOT PUC navigation, commercial permit expediter, Houston building permits" 
+        />
+      </Helmet>
       <Navbar />
       <Hero />
       <DataCenterSection />
