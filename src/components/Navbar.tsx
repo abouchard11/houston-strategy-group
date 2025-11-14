@@ -20,7 +20,7 @@ const Navbar = () => {
     { label: "Services", href: "#services" },
     { label: "Data Centers", href: "#data-centers" },
     { label: "Process", href: "#process" },
-    { label: "Projects", href: "#projects" },
+    { label: "Portfolio", href: "/portfolio", isRoute: true },
     { label: "Team", href: "#team" },
     { label: "Testimonials", href: "/testimonials", isRoute: true },
     { label: "FAQ", href: "#faq" },

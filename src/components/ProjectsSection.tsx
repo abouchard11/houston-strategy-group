@@ -1,5 +1,7 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { MapPin, DollarSign, Calendar } from "lucide-react";
+import { MapPin, DollarSign, Calendar, ArrowRight } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -95,13 +97,30 @@ const ProjectsSection = () => {
         </div>
 
         {/* Map Callout */}
-        <div className="bg-gradient-hero rounded-2xl p-12 text-center">
+        <div className="bg-gradient-hero rounded-2xl p-12 text-center mb-12">
           <h3 className="text-3xl font-black text-primary-foreground mb-4">
             Statewide Texas Coverage
           </h3>
           <p className="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
             From Houston to Austin, Dallas to San Antonio—we bring deep ERCOT/utility relationships 
             and permit expertise across all major Texas metros.
+          </p>
+        </div>
+
+        {/* View Full Portfolio CTA */}
+        <div className="text-center">
+          <Button 
+            asChild 
+            size="lg" 
+            className="bg-accent hover:bg-accent-light text-accent-foreground font-bold"
+          >
+            <Link to="/portfolio" className="flex items-center gap-2">
+              View Complete Portfolio
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
+          <p className="text-muted-foreground mt-4">
+            See detailed case studies with before/after photos and permit timelines
           </p>
         </div>
       </div>
